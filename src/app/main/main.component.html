@@ -1,0 +1,17 @@
+<header>
+    <div>
+        <img class="logo" src="../../assets/668.svg" />
+        <h1>Angular Flask Posts</h1>
+        <p>Powered by Angular 8 / Flask / MySQL</p>
+    </div>      
+</header>
+
+
+<div class="postsContainer">
+<div class="post" *ngFor="let post of posts">
+    <a [routerLink]="[ '/post', post[0] ]">
+        <img src="{{post[3]}}"/>
+    </a>
+</div>
+</div>
+
